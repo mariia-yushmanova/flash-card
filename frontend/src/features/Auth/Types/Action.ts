@@ -1,7 +1,8 @@
-import { Res } from './User';
+import { State } from './types';
 
-type Action =
-| { type: 'REGA'; payload: Res }
-| { type: 'LOGOUT' };
+type Action = {
+  type: 'REG_USER';
+  payload: State;
+};
 
 export default Action;

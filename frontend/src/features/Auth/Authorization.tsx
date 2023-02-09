@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Login(): JSX.Element {
+function Authorization(): JSX.Element {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   return (
@@ -33,4 +33,4 @@ function Login(): JSX.Element {
   );
 }
 
-export default Login;
+export default Authorization;

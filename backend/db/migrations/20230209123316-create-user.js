@@ -22,7 +22,6 @@ module.exports = {
         type: Sequelize.TEXT,
       },
       score: {
-        allowNull: false,
         type: Sequelize.INTEGER,
       },
       createdAt: {
