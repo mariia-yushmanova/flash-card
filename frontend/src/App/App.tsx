@@ -5,9 +5,9 @@ import { Route, Routes } from 'react-router-dom';
 import * as api from './api';
 import Navbar from '../features/Navbar/Navbar';
 import CardsList from '../features/Cards/CardsList';
-// import * as api from './api';
 import Registration from '../features/auth/Registration';
 import Authorization from '../features/auth/Authorization';
+import MainPage from '../features/MainPage/MainPage';
 
 function App(): JSX.Element {
   const dispatch = useDispatch();
@@ -25,7 +25,7 @@ function App(): JSX.Element {
     <div className="App">
       <Routes>
         <Route path="/" element={<Navbar />}>
-          {/* <Route index element={<MainPage />} /> */}
+          <Route index element={<MainPage />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/login" element={<Authorization />} />
           <Route path="/cards" element={<CardsList />} />
