@@ -16,6 +16,10 @@
   }
   &__logo {
     margin-left: 50px;
+   
+    &_img {
+      height: 100px;
+    }
   }
   &__list {
     list-style: none;
