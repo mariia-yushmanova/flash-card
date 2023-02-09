@@ -15,10 +15,7 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
-<<<<<<< HEAD
     "redux": "^4.2.1",
-=======
->>>>>>> 8980d065d8c2258956f694f7e479df916ff862ca
     "sass": "^1.58.0",
     "scss": "^0.2.4",
     "typescript": "^4.9.5",
@@ -68,7 +65,7 @@
       "no-await-in-loop": 0,
       "@typescript-eslint/consistent-type-definitions": [
         "error",
-        "interface"
+        "type"
       ],
       "consistent-return": 0,
       "object-curly-newline": 0,

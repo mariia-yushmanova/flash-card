@@ -22,7 +22,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.TEXT,
       },
       score: {
-        allowNull: false,
         type: DataTypes.INTEGER,
       },
     },
@@ -30,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
       sequelize,
       modelName: 'User',
       tableName: 'Users',
-    }
+    },
   );
   return User;
 };

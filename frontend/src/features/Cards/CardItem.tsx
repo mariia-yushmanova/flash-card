@@ -11,7 +11,7 @@ function CardItem({ card }: { card: Card }): JSX.Element {
         <div className="question_point">{card.point}</div>
       </div>
       <div className={`overlay animated ${open ? 'show' : ''}`}>
-        <div className="overlay_modal">
+        <div className="overlay__modal">
           <svg
             height="200"
             viewBox="0 0 200 200"
