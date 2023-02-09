@@ -70,18 +70,19 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import * as api from '../../App/api';
-import { RootState } from '../../store';
+import * as api from '../../../App/api';
+import { RootState } from '../../../store';
 
 function Registration(): JSX.Element {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  // const [password2, setPassword2] = useState('');
+  const [password2, setPassword2] = useState('');
   const nav = useNavigate();
   const dispatch = useDispatch();
 
   const { user, message } = useSelector((store: RootState) => store.userState);
+  // console.log(user)
   const registr = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     api.registr({ name, password, email }).then((data) =>
@@ -127,14 +128,14 @@ function Registration(): JSX.Element {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        {/* <label htmlFor="password2">Password 2</label>
+        <label htmlFor="password2">Password 2</label>
         <input
           id="password2"
           name="password2"
           type="password"
           value={password2}
           onChange={(e) => setPassword2(e.target.value)}
-        /> */}
+        />
         <p id="error" />
         <button type="submit">Sign Up</button>
       </form>
