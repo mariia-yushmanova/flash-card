@@ -2,8 +2,8 @@ const express = require('express');
 const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const { resLocals, getUser } = require('../middleware/auth');
 const cors = require('cors');
+const { resLocals, getUser } = require('../middleware/auth');
 const sessionConfig = require('./session');
 
 const corsOptions = {
