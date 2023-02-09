@@ -25,14 +25,17 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal__img {
   border-radius: 5px;
-  width: 100%;
-  max-height: 520px;
+  height: 60%;
+  width: 60%;
 }
 
 .modal__svg {
@@ -63,4 +66,23 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.card-list {
+  height: 100vh;
+}
+
+.question {
+  font-size: 16px;
+}
+
+.question_point {
+  // margin: 10px;
+  background: linear-gradient(
+    179.96deg,
+    rgba(255, 255, 255, 0.25) 0.04%,
+    rgba(87, 177, 255, 0) 130.08%
+  );
+  border-radius: 46px;
+  height: 130px;
 }
