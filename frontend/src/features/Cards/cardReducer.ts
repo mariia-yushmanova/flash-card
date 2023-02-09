@@ -9,6 +9,12 @@ export const cardReducer = (state: State = init, action: Action): State => {
         ...state,
         cards: action.payload,
       };
+    case 'CHECK_ANSWER':
+      return {
+        ...state,
+        cards: [action.payload],
+      };
+
     default:
       return state;
   }

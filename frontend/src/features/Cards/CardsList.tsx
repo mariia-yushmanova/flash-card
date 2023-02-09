@@ -6,7 +6,6 @@ import CardItem from './CardItem';
 
 function CardsList(): JSX.Element {
   const { cards } = useSelector((store: RootState) => store.cardState);
-
   const { themes } = useSelector((store: RootState) => store.themeState);
 
   return (

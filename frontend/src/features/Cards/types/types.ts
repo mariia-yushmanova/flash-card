@@ -8,6 +8,7 @@ export type Card = {
   theme_id: number;
   user_id: number;
 };
+
 export type State = {
   cards: Card[];
 };
