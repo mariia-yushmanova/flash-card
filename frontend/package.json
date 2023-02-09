@@ -65,7 +65,7 @@
       "no-await-in-loop": 0,
       "@typescript-eslint/consistent-type-definitions": [
         "error",
-        "interface"
+        "type"
       ],
       "consistent-return": 0,
       "object-curly-newline": 0,
