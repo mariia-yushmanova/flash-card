@@ -12,7 +12,7 @@ function Navbar(): JSX.Element {
       <div className="nav__container">
         <div className="nav__logo">
           <NavLink to="/">
-            <img src="/img/logo.png" alt="logo" />
+            <img src="/img/logo.png" alt="logo" className="nav__logo_img" />
           </NavLink>
         </div>
         {!user ? (

@@ -3,6 +3,10 @@ const cors = require('cors');
 const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
+<<<<<<< HEAD
+=======
+const cors = require('cors');
+>>>>>>> afcefe5e01e83ab8b0ac048c0954e47747f3fa43
 const { resLocals, getUser } = require('../middleware/auth');
 const sessionConfig = require('./session');
 
