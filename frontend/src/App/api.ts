@@ -31,7 +31,8 @@ export const checkUser = async (): Promise<Res> => {
   const res = await fetch('http://localhost:4000/api/auth/sign-in', {
     credentials: 'include',
   });
-  return res.json();
+  const data = await res.json();
+  return data;
 };
 
 export const logout = async (): Promise<User> => {

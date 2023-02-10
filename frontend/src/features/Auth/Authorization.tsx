@@ -32,7 +32,7 @@ function Authorization(): JSX.Element {
         style={{ display: 'flex', flexDirection: 'column' }}
         onSubmit={login}
       >
-        <label htmlFor="type">Email</label>
+        <label htmlFor="type">Почта</label>
         <input
           id="type"
           name="email"
@@ -40,16 +40,18 @@ function Authorization(): JSX.Element {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <label htmlFor="img">Password</label>
+        <label htmlFor="img">Пароль</label>
         <input
           id="img"
           name="password"
-          type="text"
+          type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button type="submit">Авторизироваться</button>
+        <button type="submit" className="button-color">
+          Войти
+        </button>
       </form>
     </div>
   );

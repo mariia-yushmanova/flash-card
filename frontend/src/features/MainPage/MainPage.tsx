@@ -16,20 +16,23 @@ function MainPage(): JSX.Element {
             Хочешь быть в числе сильнейших - зарегистрируйся!
           </h4>
           {user && (
-            <button onClick={() => nav('/cards')} type="button">
+            <button
+              onClick={() => nav('/cards')}
+              type="button"
+              className="button-color"
+            >
               Начать
             </button>
           )}
         </div>
-        <div>
-          <h1>Супер стастика</h1>
+        <div className="static">
+          <h1 className="static-text">Супер стастика</h1>
         </div>
         <div>
           {users.map((usere) => (
-            <div>
-              <p>
-                {usere.name},{usere.score}
-              </p>
+            <div className="user-flex">
+              <p>▲ {usere.name}</p>&nbsp; .......................&nbsp;{' '}
+              <p>{usere.score}</p>
             </div>
           ))}
         </div>

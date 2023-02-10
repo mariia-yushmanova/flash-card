@@ -6,7 +6,7 @@ router.get('/sign-in', async (req, res) => {
   const id = req.session.userId;
   if (id) {
     const user = await User.findOne({ where: { id } });
-    res.json({ message: 'Hi', user: user.login });
+    res.json({ message: 'Hi', user: user.name });
   } else {
     res.json({ message: 'no', user: '' });
   }
@@ -50,6 +50,7 @@ router.post('/sign-up', async (req, res) => {
           name,
           email,
           password: hash,
+          score: 0,
         });
         user = {
           id: newUser.id,
@@ -72,7 +73,9 @@ router.post('/sign-up', async (req, res) => {
 });
 
 router.get('/logout', (req, res) => {
-  req.session.destroy(() => res.clearCookie('user_sid').json({ message: 'Session destroy' }));
+  req.session.destroy(() =>
+    res.clearCookie('user_sid').json({ message: 'Session destroy' })
+  );
 });
 
 module.exports = router;

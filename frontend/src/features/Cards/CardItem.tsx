@@ -40,12 +40,15 @@ function CardItem({ card }: { card: Card }): JSX.Element {
             <title />
             <path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z" />
           </svg>
-          <form onSubmit={submitAnswer}>
+          <img src={card.img} alt="" className="modal__img" />
+          <div className="question">{card.question}</div>
+          <form onSubmit={submitAnswer} className="form-answer">
             <input
               value={answer}
               name="answer"
               onChange={(e) => setCurrentAnswer(e.target.value)}
               type="text"
+              className="input-answer"
             />
             <button
               onClick={() => {
@@ -54,12 +57,11 @@ function CardItem({ card }: { card: Card }): JSX.Element {
                 setOpen(false);
               }}
               type="submit"
+              className="button-color"
             >
-              Answer
+              Ответик
             </button>
           </form>
-          <img src={card.img} alt="" className="modal__img" />
-          <div className="question">{card.question}</div>
         </div>
       </div>
       {rightAnswerAndDescription && (
