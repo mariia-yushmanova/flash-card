@@ -6,6 +6,7 @@ import { RootState } from '../../store';
 
 function Navbar(): JSX.Element {
   const { user } = useSelector((store: RootState) => store.userState);
+console.log(user);
   return (
     <>
       <div className="nav__container">
