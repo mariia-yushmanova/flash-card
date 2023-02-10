@@ -1,6 +1,7 @@
 /*Modal*/
 .card_item {
   margin: 10px;
+  width: 220px;
 }
 .overlay {
   position: fixed;
@@ -70,6 +71,9 @@
 
 .card-list {
   height: 100vh;
+  background-image: url('../../../public/img/jj.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .question {
@@ -80,8 +84,8 @@
   // margin: 10px;
   background: linear-gradient(
     179.96deg,
-    rgba(255, 255, 255, 0.25) 0.04%,
-    rgba(87, 177, 255, 0) 130.08%
+    rgba(255, 255, 255, 0.8) 70.04%,
+    rgba(87, 177, 255, 0.8) 130.08%
   );
   border-radius: 46px;
   vertical-align: middle;

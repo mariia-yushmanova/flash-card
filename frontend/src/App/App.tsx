@@ -8,9 +8,9 @@ import CardsList from '../features/Cards/CardsList';
 
 import MainPage from '../features/MainPage/MainPage';
 
-import Registration from '../features/Auth/Registration';
-import Authorization from '../features/Auth/Authorization';
-import Logout from '../features/Auth/Logout';
+import Registration from '../features/auth/Registration';
+import Authorization from '../features/auth/Authorization';
+import Logout from '../features/auth/Logout';
 
 function App(): JSX.Element {
   const dispatch = useDispatch();
