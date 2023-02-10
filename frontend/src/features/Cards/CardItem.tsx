@@ -50,7 +50,8 @@ function CardItem({ card }: { card: Card }): JSX.Element {
             />
             <button
               onClick={() => {
-                setSuccess(false), setOpen(false);
+                setSuccess(false);
+                setOpen(false);
               }}
               type="submit"
             >

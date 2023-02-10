@@ -15,7 +15,7 @@ router.put('/score', async (req, res) => {
   try {
     const card = await Card.findOne({ where: { id } });
     const user = await User.findOne({
-      where: { id: 1 },
+      where: { id: req.session.userid },
     });
 
     if (card.answer.toLowerCase() === answer.toLowerCase()) {
