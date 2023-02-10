@@ -1,4 +1,4 @@
-import { User } from '../features/Auth/Types/types';
+import { Res, User } from '../features/Auth/Types/types';
 import { Answer, Card } from '../features/Cards/types/types';
 
 import { Theme } from '../features/Themes/types/types';
@@ -27,7 +27,7 @@ export const login = async (item: User): Promise<User> => {
   });
   return res.json();
 };
-export const checkUser = async (): Promise<User> => {
+export const checkUser = async (): Promise<Res> => {
   const res = await fetch('http://localhost:4000/api/auth/sign-in', {
     credentials: 'include',
   });

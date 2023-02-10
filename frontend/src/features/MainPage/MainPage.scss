@@ -1,3 +1,29 @@
 .main {
-  height: 100vh;
+  //   height: 100vh;
+  color: aqua;
+  text-align: center;
+  //   background-image: url('../../../public/img/bg3.webp');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  height: 100%;
+  padding-top: 100px;
+  //   background-position: center;
+  overflow-x: hidden;
+  font-family: 'Comfortaa', cursive;
+}
+
+.main__flex {
+  display: flex;
+  justify-content: center;
+}
+
+.main_text {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.main_text2 {
+  overflow-wrap: break-word;
+  width: 500px;
+  padding-top: 20px;
 }

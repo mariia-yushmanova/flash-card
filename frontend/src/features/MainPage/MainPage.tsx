@@ -11,8 +11,10 @@ function MainPage(): JSX.Element {
     <div className="container main">
       <div className="main__flex">
         <div className="main__title">
-          <h1>Привет отважный!</h1>
-          <h4>Хочешь быть в числе сильнейших - зарегистрируйся!</h4>
+          <h1 className="main_text">Добро пожаловать!</h1>
+          <h4 className="main_text2">
+            Хочешь быть в числе сильнейших - зарегистрируйся!
+          </h4>
           {user && (
             <button onClick={() => nav('/cards')} type="button">
               Начать
@@ -21,6 +23,8 @@ function MainPage(): JSX.Element {
         </div>
         <div>
           <h1>Супер стастика</h1>
+        </div>
+        <div>
           {users.map((usere) => (
             <div>
               <p>

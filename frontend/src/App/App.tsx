@@ -3,13 +3,14 @@ import { useDispatch } from 'react-redux';
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import * as api from './api';
+
 import Navbar from '../features/Navbar/Navbar';
 import CardsList from '../features/Cards/CardsList';
 import MainPage from '../features/MainPage/MainPage';
-
 import Registration from '../features/Auth/Registration';
 import Authorization from '../features/Auth/Authorization';
 import Logout from '../features/Auth/Logout';
+import NotFound from '../features/NotFound/NotFound';
 
 function App(): JSX.Element {
   const dispatch = useDispatch();
@@ -27,9 +28,7 @@ function App(): JSX.Element {
   }, [dispatch]);
 
   useEffect(() => {
-    api
-      .checkUser()
-      .then((data) => dispatch({ type: 'LOG_USER', payload: data }));
+    api.checkUser().then((data) => dispatch({ type: 'RES', payload: data }));
   }, []);
 
   return (
@@ -41,6 +40,7 @@ function App(): JSX.Element {
           <Route path="/login" element={<Authorization />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/cards" element={<CardsList />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </div>
