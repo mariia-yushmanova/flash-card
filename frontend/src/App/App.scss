@@ -1,8 +1,11 @@
 .App {
   text-align: center;
-  background-image: url('../../public/img/bg.png');
+  background-image: url('../../public/img/bg33.png');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  background-position: center;
+  overflow-x: hidden;
 }
 
 body,
@@ -20,4 +23,5 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-family: 'Comfortaa', cursive;
 }

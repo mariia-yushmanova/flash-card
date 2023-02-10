@@ -1,4 +1,4 @@
-import { User } from '../features/Auth/Types/types';
+import { User } from '../features/auth/Types/types';
 import { Answer, Card } from '../features/Cards/types/types';
 
 import { Theme } from '../features/Themes/types/types';
