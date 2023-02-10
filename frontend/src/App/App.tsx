@@ -28,8 +28,10 @@ function App(): JSX.Element {
   }, [dispatch]);
 
   useEffect(() => {
-    api.checkUser().then((data) => dispatch({ type: 'RES', payload: data }));
-  }, []);
+    api
+      .checkUser()
+      .then((data) => dispatch({ type: 'LOG_USER', payload: data }));
+  }, [dispatch]);
 
   return (
     <div className="App">

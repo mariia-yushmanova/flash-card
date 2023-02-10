@@ -1,4 +1,4 @@
-import { Res, User } from '../features/Auth/Types/types';
+import { State, Res, User } from '../features/Auth/Types/types';
 import { Answer, Card } from '../features/Cards/types/types';
 
 import { Theme } from '../features/Themes/types/types';
@@ -56,7 +56,7 @@ export const loadThemes = async (): Promise<Theme[]> => {
   return res.json();
 };
 
-export const checkAnswer = async (answer: Answer): Promise<User> => {
+export const checkAnswer = async (answer: Answer): Promise<State> => {
   const res = await fetch('http://localhost:4000/api/cards/score', {
     method: 'PUT',
     headers: {
@@ -66,6 +66,7 @@ export const checkAnswer = async (answer: Answer): Promise<User> => {
       id: answer.id,
       answer: answer.text,
     }),
+    credentials: 'include',
   });
 
   return res.json();
