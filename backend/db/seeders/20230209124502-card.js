@@ -7,7 +7,7 @@ module.exports = {
         question:
           'Есть ли такое аниме? «Я побрился. Затем привёл домой старшеклассницу»',
         answer: 'Да',
-        img: 'https://avatars.mds.yandex.net/i?id=2d378c6e735ac6d0c8b95d1f84b0e3bd929b607a-7762130-images-thumbs&n=13',
+        img: '/img/zagluska.jpg',
         description:
           'Оно существует! И, как ни странно, транслирует очень правильные ценности',
         point: 100,
@@ -20,7 +20,7 @@ module.exports = {
         question:
           'Есть ли такое аниме? «Раз героем мне не стать, самое время - работу искать!»',
         answer: 'Да',
-        img: 'https://avatars.mds.yandex.net/i?id=dd31a086cd84a83746a3db8fe0f36ece-5666834-images-thumbs&n=13',
+        img: 'https://media.myshows.me/shows/1920/4/17/41758b47236fa89ca7eb0d956269d8bf.jpg',
         description:
           'Такое аниме действительно существует! Главный герой, работая продавцом, встретил дочь короля демонов. Из одного Ада в другой.',
         point: 200,
@@ -33,7 +33,7 @@ module.exports = {
         question:
           'Есть ли такое аниме? «Между жизнью и смертью я выбираю гамбургер»',
         answer: 'Нет',
-        img: '/img/zagluska.jpg',
+        img: 'https://kartinkin.net/uploads/posts/2022-10/thumbs/1665539062_35-kartinkin-net-p-art-yedu-vkontakte-39.jpg',
         description: 'Такого аниме не существует! ',
         point: 300,
         user_id: 1,
@@ -44,7 +44,7 @@ module.exports = {
       {
         question: 'Есть ли такое аниме? «Отвергнутый подряд 420 девушками»',
         answer: 'Да',
-        img: 'https://b1.filmpro.ru/c/603637.200x288.jpg',
+        img: 'https://moe.shikimori.one/system/user_images/original/24114/156702.jpg',
         description: 'Не повезло же главному герою…',
         point: 400,
         user_id: 1,
@@ -56,7 +56,7 @@ module.exports = {
         question:
           'Есть ли такое аниме? «Ты же любишь мамочку, удары которой бьют по площади двойным уроном?»',
         answer: 'Да',
-        img: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/e5173fae-df78-4017-83fb-38e23690af54/300x450',
+        img: 'https://images.kinorium.com/movie/shot/2062297/w1500_37821263.jpg',
         description:
           'Оно существует. И название отражает суть примерно на 147%.',
         point: 500,
@@ -69,7 +69,7 @@ module.exports = {
       {
         question: 'У какой из диснеевских принцесс самые длинные волосы?',
         answer: 'Рапунцель',
-        img: 'https://avatars.mds.yandex.net/i?id=8fb668849ce2a98f1306c354264a7198d94a328c-3449574-images-thumbs&n=13',
+        img: 'https://mobimg.b-cdn.net/v3/fetch/92/92c40233afc49f69609b5a0f6684489a.jpeg',
         description: 'RAPUNCEL',
         point: 100,
         user_id: 1,
@@ -81,7 +81,7 @@ module.exports = {
         question:
           'Как звали робота основной задачей которого было очищать планету от накопившегося мусора.',
         answer: 'ВАЛЛ-И',
-        img: 'https://avatars.mds.yandex.net/i?id=9cef31b2a1d7440bc25721f179bb88e2e0ecad36-8182507-images-thumbs&n=13',
+        img: 'http://klubmama.ru/uploads/posts/2022-08/1660277228_55-klubmama-ru-p-valli-podelka-iz-bumagi-foto-55.jpg',
         description: 'WALLE',
         point: 200,
         user_id: 1,
@@ -93,7 +93,7 @@ module.exports = {
         question:
           'Как звали красивого, умного и в меру упитанного мужчину в самом расцвете сил',
         answer: 'Карлсон',
-        img: 'https://avatars.mds.yandex.net/i?id=01451509044073dea18a9118f9df098cb45447ea-8176762-images-thumbs&n=13',
+        img: 'https://kartinkin.net/uploads/posts/2022-12/1670325215_1-kartinkin-net-p-kartinki-karlsona-krasivo-1.jpg',
         description: 'KARLSON',
         point: 300,
         user_id: 1,
@@ -104,7 +104,7 @@ module.exports = {
       {
         question: 'Для него «бесконечность не предел»',
         answer: 'Базз Лайтер',
-        img: 'https://avatars.mds.yandex.net/i?id=4b5f219d317b4def84bc64d66f6a419510b9a744-4464154-images-thumbs&n=13',
+        img: 'https://www.film.ru/sites/default/files/images/1111-18(7).jpg',
         description: 'BAZZ LIGHTER',
         point: 400,
         user_id: 1,
@@ -116,7 +116,7 @@ module.exports = {
         question:
           'Он известный коротышка, Озорник и шалунишка. Шляпа, галстук - вот приметы. Угадали? Кто же это?',
         answer: 'Незнайка',
-        img: 'https://avatars.mds.yandex.net/i?id=c71c1d6bc8e22cd18970c89295cfe2c0cc434044-8497069-images-thumbs&n=13',
+        img: 'https://funforkids.ru/pictures/neznaika/neznaika21.png',
         description: 'NEZNAYKA',
         point: 500,
         user_id: 1,
@@ -129,7 +129,7 @@ module.exports = {
         question:
           'В какую страну отправился Форрест Гамп в составе сборной США по настольному теннису?',
         answer: 'Китай',
-        img: 'https://avatars.mds.yandex.net/i?id=955d1e355fe69f7739d264d487bff4c593f0380c-8210081-images-thumbs&n=13',
+        img: 'https://avatars.mds.yandex.net/get-kinopoisk-image/4486454/d7b4e846-8249-496d-8924-516869ddcee0/1920x',
         description: 'CHINA',
         point: 100,
         user_id: 1,
@@ -140,7 +140,7 @@ module.exports = {
       {
         question: 'Какой фильм является самым кассовым в истории?',
         answer: 'Аватар',
-        img: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/4adf61aa-3cb7-4381-9245-523971e5b4c8/300x450',
+        img: 'https://i.pinimg.com/736x/4c/d8/15/4cd815438853768ad8f165f4374a27e6--film-avatar-pandora.jpg',
         description: 'Сборы в мире $2 923 905 528',
         point: 200,
         user_id: 1,
@@ -152,7 +152,7 @@ module.exports = {
         question:
           'Какая кинофраншиза является самой продолжительной в истории кино?',
         answer: 'Годзилла',
-        img: 'https://avatars.mds.yandex.net/i?id=dfda53fe14690cab3d0b7a294055776c91950ac3-8264916-images-thumbs&n=13',
+        img: 'https://i.imgur.com/95Wm0Mo.jpg',
         description: '68 лет (1954 - настоящее время)',
         point: 300,
         user_id: 1,
@@ -163,7 +163,7 @@ module.exports = {
       {
         question: 'Какой фильм является самым провальным в истории?',
         answer: 'Сахара',
-        img: 'https://avatars.mds.yandex.net/i?id=a8f80a489ae37e7101d36feb933d7fd3267f6327-8133404-images-thumbs&n=13',
+        img: 'https://images.iptv.rt.ru/images/c6ud7t3ir4sslltvnl8g.jpg',
         description: 'При бюджете фильма в $241 млн убыток составил $122 млн',
         point: 400,
         user_id: 1,
@@ -174,7 +174,7 @@ module.exports = {
       {
         question: 'Каким фильмом вы бы описали обучение в Эльбрусе?',
         answer: 'Выживший',
-        img: 'https://avatars.mds.yandex.net/i?id=1ab3952ff318e299e4b447abaa8a4bef9c8c418f-7760211-images-thumbs&n=13',
+        img: 'https://mobimg.b-cdn.net/v3/fetch/6d/6d336871e14a6cc14989851c599dc555.jpeg',
         description: 'По версии Ежиного патруля',
         point: 500,
         user_id: 1,
@@ -186,7 +186,7 @@ module.exports = {
       {
         question: 'Какой самы популярный напиток в мире?',
         answer: 'Кофе',
-        img: '/img/zagluska.jpg',
+        img: 'https://avatars.mds.yandex.net/i?id=27cd47dc5981d5036503e0758fd9c3cb-4498485-images-thumbs&n=13',
         description: 'Ежегодно люди употребляют около 400 млрд. чашек',
         point: 100,
         user_id: 1,
@@ -197,7 +197,7 @@ module.exports = {
       {
         question: 'Правда ли, что все Панды в мире принадлежат Китаю?',
         answer: 'Да',
-        img: '/home/roman/flash-card/backend/img/rtayd8.jpg',
+        img: 'https://krot.info/uploads/posts/2022-03/1646799073_65-krot-info-p-prikolnie-pandi-smeshnie-foto-69.jpg',
         description: 'Все зоопарки мира лишь берут панд в аренду',
         point: 200,
         user_id: 1,
@@ -208,7 +208,7 @@ module.exports = {
       {
         question: 'Какому знаку зодиака запрещено водить машину в Индонезии?',
         answer: 'Всем разрешено',
-        img: '/img/zagluska.jpg',
+        img: 'https://avatars.mds.yandex.net/i?id=26ee06734ac2c1d0c42159ada413009ad41e876e-8496495-images-thumbs&n=13',
         description:
           'Знаки зодиака, к счастью, не являются критериями чего-либо серьезного',
         point: 300,
@@ -220,7 +220,7 @@ module.exports = {
       {
         question: 'Какую книгу чаще всего воруют в американских магазинах?',
         answer: 'Библию',
-        img: '/img/zagluska.jpg',
+        img: 'https://avatars.mds.yandex.net/i?id=c22c2ac05564a5a71244933d41f6c0a5cccb8d35-7760894-images-thumbs&n=13',
         description: 'HOLY JESUS',
         point: 400,
         user_id: 1,
@@ -231,7 +231,7 @@ module.exports = {
       {
         question: 'Умирают ли люди от непонятного почерка врачей?',
         answer: 'Да',
-        img: '/img/zagluska.jpg',
+        img: 'https://avatars.mds.yandex.net/i?id=6e02956223674281265c1e42148e6aa651bd6f6e-7096437-images-thumbs&n=13',
         description:
           'По американской статистике ежегодно от этого умирают более 7000 пациентов, в связи с тем, что им попросту выдают не те лекарства или вовсе неверно расшифровывают непонятные врачебные аббревиатуры',
         point: 500,
