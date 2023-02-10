@@ -5,11 +5,12 @@ import { Route, Routes } from 'react-router-dom';
 import * as api from './api';
 import Navbar from '../features/Navbar/Navbar';
 import CardsList from '../features/Cards/CardsList';
-// import * as api from './api';
+
+import MainPage from '../features/MainPage/MainPage';
+
 import Registration from '../features/Auth/Registration';
 import Authorization from '../features/Auth/Authorization';
 import Logout from '../features/Auth/Logout';
-
 
 function App(): JSX.Element {
   const dispatch = useDispatch();
@@ -24,7 +25,9 @@ function App(): JSX.Element {
   }, [dispatch]);
 
   useEffect(() => {
-    api.checkUser().then((data) => dispatch({ type: 'LOG_USER', payload: data }));
+    api
+      .checkUser()
+      .then((data) => dispatch({ type: 'LOG_USER', payload: data }));
   }, []);
 
   return (
