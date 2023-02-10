@@ -70,8 +70,8 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import * as api from '../../../App/api';
-import { RootState } from '../../../store';
+import * as api from '../../App/api';
+import { RootState } from '../../store';
 
 function Registration(): JSX.Element {
   const [name, setName] = useState('');

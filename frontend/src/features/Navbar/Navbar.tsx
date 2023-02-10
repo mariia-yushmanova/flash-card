@@ -16,7 +16,7 @@ console.log(user);
           </NavLink>
         </div>
         <ul className="nav__list">
-          {user && (
+          {!user && (
             <>
               <li>
                 <NavLink className="nav__list-item" to="/registration">
@@ -30,7 +30,7 @@ console.log(user);
               </li>
             </>
           )}
-          {!user && (
+          {user && (
             <li>
               <NavLink className="nav__list-item" to="/logout">
                 LogOut

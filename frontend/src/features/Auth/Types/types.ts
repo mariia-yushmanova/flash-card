@@ -8,4 +8,3 @@ export type User = {
     user: {} | User;
     message: '' | string;
   };
-  

@@ -1,4 +1,4 @@
-import { User } from '../features/Auth/Authorization/Types/types';
+import { User } from '../features/Auth/Types/types';
 import { Card } from '../features/Cards/types/types';
 import { Theme } from '../features/Themes/types/types';
 
@@ -35,7 +35,6 @@ export const logout = async (): Promise<User> => {
   const res = await fetch('http://localhost:4000/api/auth/logout', { credentials: 'include' });
   return res.json();
 };
-
 
 export const loadCards = async (): Promise<Card[]> => {
   const res = await fetch('http://localhost:4000/api/cards');

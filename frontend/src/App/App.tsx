@@ -6,9 +6,9 @@ import * as api from './api';
 import Navbar from '../features/Navbar/Navbar';
 import CardsList from '../features/Cards/CardsList';
 // import * as api from './api';
-import Registration from '../features/Auth/Registration/Registration';
-import Authorization from '../features/Auth/Authorization/Authorization';
-import Logout from '../features/Auth/Logout/Logout';
+import Registration from '../features/Auth/Registration';
+import Authorization from '../features/Auth/Authorization';
+import Logout from '../features/Auth/Logout';
 
 function App(): JSX.Element {
   const dispatch = useDispatch();
