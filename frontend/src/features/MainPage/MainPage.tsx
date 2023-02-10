@@ -5,8 +5,6 @@ import { RootState } from '../../store';
 
 function MainPage(): JSX.Element {
   const { users } = useSelector((store: RootState) => store.userState);
-
-  console.log(users);
   return (
     <div className="container main">
       <div className="main__flex">

@@ -4,6 +4,7 @@ const { User } = require('../db/models');
 
 router.get('/sign-in', async (req, res) => {
   const id = req.session.userId;
+
   if (id) {
     const user = await User.findOne({ where: { id } });
     res.json({ message: 'Hi', user: user.login });
@@ -55,6 +56,7 @@ router.post('/sign-up', async (req, res) => {
           name: newUser.name,
           email: newUser.email,
         };
+        console.log(newUser);
         req.session.userid = user.id;
         res.status(201).json({ message: '', user });
       } else {
