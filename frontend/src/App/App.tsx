@@ -5,7 +5,6 @@ import { Route, Routes } from 'react-router-dom';
 import * as api from './api';
 import Navbar from '../features/Navbar/Navbar';
 import CardsList from '../features/Cards/CardsList';
-
 import MainPage from '../features/MainPage/MainPage';
 
 import Registration from '../features/Auth/Registration';
@@ -22,6 +21,9 @@ function App(): JSX.Element {
     api
       .loadThemes()
       .then((data) => dispatch({ type: 'INIT_THEMES', payload: data }));
+    api
+      .getUsers()
+      .then((data) => dispatch({ type: 'INIT_USERS', payload: data }));
   }, [dispatch]);
 
   useEffect(() => {

@@ -82,7 +82,6 @@ function Registration(): JSX.Element {
   const dispatch = useDispatch();
 
   const { user, message } = useSelector((store: RootState) => store.userState);
-  // console.log(user)
   const registr = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     api.registr({ name, password, email }).then((data) =>

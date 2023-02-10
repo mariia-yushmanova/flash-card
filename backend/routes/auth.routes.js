@@ -56,6 +56,7 @@ router.post('/sign-up', async (req, res) => {
           name: newUser.name,
           email: newUser.email,
         };
+        console.log(newUser);
         req.session.userid = user.id;
         res.status(201).json({ message: '', user });
       } else {
@@ -72,9 +73,7 @@ router.post('/sign-up', async (req, res) => {
 });
 
 router.get('/logout', (req, res) => {
-  req.session.destroy(() =>
-    res.clearCookie('user_sid').json({ message: 'Session destroy' })
-  );
+  req.session.destroy(() => res.clearCookie('user_sid').json({ message: 'Session destroy' }));
 });
 
 module.exports = router;

@@ -5,9 +5,9 @@ module.exports = {
       // Аниме
       {
         question:
-          'Есть ли такое аниме? «Я напился и привёл домой старшеклассницу»',
+          'Есть ли такое аниме? «Я побрился. Затем привёл домой старшеклассницу»',
         answer: 'Да',
-        img: 'https://avatars.mds.yandex.net/i?id=8e72a6a3589270181bef1a2f02cc9bf0-5318071-images-thumbs&n=13',
+        img: 'https://avatars.mds.yandex.net/i?id=2d378c6e735ac6d0c8b95d1f84b0e3bd929b607a-7762130-images-thumbs&n=13',
         description:
           'Оно существует! И, как ни странно, транслирует очень правильные ценности',
         point: 100,

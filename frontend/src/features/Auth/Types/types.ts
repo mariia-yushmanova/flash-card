@@ -8,4 +8,5 @@ export type User = {
 export type State = {
   user: {} | User;
   message: '' | string;
+  users: User[];
 };
