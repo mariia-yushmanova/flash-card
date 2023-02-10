@@ -28,7 +28,7 @@ function App(): JSX.Element {
     api
       .checkUser()
       .then((data) => dispatch({ type: 'LOG_USER', payload: data }));
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="App">

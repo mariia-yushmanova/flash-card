@@ -15,16 +15,21 @@ export const userReducer = (state: State = init, action: Action): State => {
         user: action.payload.user,
         message: action.payload.message,
       };
-      case 'LOG_USER':
+    case 'LOG_USER':
       return {
         ...state,
         user: action.payload.user,
         message: action.payload.message,
       };
-      case 'LOGOUT':
+    case 'LOGOUT':
       return {
         ...state,
-        user: ''
+        user: '',
+      };
+    case 'CHECK_SCORE':
+      return {
+        ...state,
+        user: action.payload.user,
       };
 
     default:

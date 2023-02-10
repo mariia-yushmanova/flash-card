@@ -9,7 +9,6 @@ function CardsList(): JSX.Element {
   const { cards } = useSelector((store: RootState) => store.cardState);
   const { themes } = useSelector((store: RootState) => store.themeState);
   const { user } = useSelector((store: RootState) => store.userState);
-  console.log(user);
 
   return (
     <div className="card-list container">
