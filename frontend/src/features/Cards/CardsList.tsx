@@ -8,9 +8,16 @@ import './Card.scss';
 function CardsList(): JSX.Element {
   const { cards } = useSelector((store: RootState) => store.cardState);
   const { themes } = useSelector((store: RootState) => store.themeState);
+  const { user } = useSelector((store: RootState) => store.userState);
 
   return (
-    <div className="card-list container">
+    <div className="card-list">
+      {'id' in user && (
+        <div>
+          <i>{user.name}</i>
+          <p>{user.score}</p>
+        </div>
+      )}
       <div className="main_themes_list">
         {themes.map((theme) => (
           <ThemeItem key={theme.id} theme={theme} />

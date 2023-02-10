@@ -1,5 +1,5 @@
 import { User } from '../features/auth/Types/types';
-import { Answer, Card, Score } from '../features/Cards/types/types';
+import { Answer, Card } from '../features/Cards/types/types';
 
 import { Theme } from '../features/Themes/types/types';
 
@@ -56,7 +56,7 @@ export const loadThemes = async (): Promise<Theme[]> => {
   return res.json();
 };
 
-export const checkAnswer = async (answer: Answer): Promise<Score> => {
+export const checkAnswer = async (answer: Answer): Promise<User> => {
   const res = await fetch('http://localhost:4000/api/cards/score', {
     method: 'PUT',
     headers: {

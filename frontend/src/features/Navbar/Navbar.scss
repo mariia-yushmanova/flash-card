@@ -9,6 +9,8 @@
     // margin-top: 10px;
     position: absolute;
     top: 0;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 15px;
   }
   &__logo {
     margin-left: 50px;
@@ -26,13 +28,15 @@
       // border-radius: 10px;
       // height: 40px;
       // padding: 0 10px;
-      color: fuchsia;
+      color: rgb(0, 247, 255);
+      font-size: 20px;
+      text-shadow: 10px 0 0 0 #de9db0;
       display: flex;
       align-items: center;
       transition: all 0.3s ease-in-out;
       &.active {
         color: aquamarine;
-        box-shadow: 1px 1px 5px #de9db0, -1px -1px 5px #ffcde4;
+        // box-shadow: 1px 1px 5px #de9db0, -1px -1px 5px #ffcde4;
       }
 
       text-decoration: none;
@@ -40,7 +44,7 @@
       &:hover {
         cursor: pointer;
         color: rgb(248, 228, 127);
-        box-shadow: 1px 1px 5px #de9db0, -1px -1px 5px #ffcde4;
+        // box-shadow: 1px 1px 5px #de9db0, -1px -1px 5px #ffcde4;
       }
     }
   }
