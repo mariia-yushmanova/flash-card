@@ -3,7 +3,7 @@ const { User } = require('../db/models');
 
 router.get('/', async (req, res) => {
   try {
-    const users = await User.findAll();
+    const users = await User.findAll({ order: [['score', 'DESC']] });
     res.status(200).json(users);
   } catch ({ message }) {
     res.status(500).json(message);

@@ -74,11 +74,13 @@
   background-image: url('../../../public/img/jj.png');
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .question {
-  font-size: 16px;
+  text-align: center;
+  font-size: 22px;
+  padding: 16px;
 }
 
 .question_point {
@@ -97,4 +99,26 @@
   pointer-events: none; /* делаем элемент неактивным для взаимодействия */
   cursor: default; /*  курсор в виде стрелки */
   color: #888;
+}
+
+.user__score {
+  color: aqua;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 10px 0 0 0 rgb(148, 21, 226);
+  margin-top: 125px;
+}
+
+.input-answer {
+  border-radius: 50px;
+}
+
+.form-answer {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  text-align: center;
+  font-size: 35px;
 }
