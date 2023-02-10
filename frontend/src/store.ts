@@ -1,10 +1,14 @@
 import { createStore, combineReducers } from 'redux';
-
+import { userReducer } from './features/auth/userReducer';
 import { cardReducer } from './features/Cards/cardReducer';
 import { themeReducer } from './features/Themes/themeReducer';
 
 const store = createStore(
-  combineReducers({ cardState: cardReducer, themeState: themeReducer })
+  combineReducers({
+    cardState: cardReducer,
+    themeState: themeReducer,
+    userState: userReducer,
+  })
 );
 
 export default store;

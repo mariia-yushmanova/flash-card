@@ -25,7 +25,7 @@ function CardItem({ card }: { card: Card }): JSX.Element {
         <div className="question_point">{card.point}</div>
       </div>
       <div className={`overlay animated ${open ? 'show' : ''}`}>
-        <div className="overlay_modal">
+        <div className="overlay__modal">
           <svg
             height="200"
             viewBox="0 0 200 200"
@@ -37,13 +37,14 @@ function CardItem({ card }: { card: Card }): JSX.Element {
             <path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z" />
           </svg>
           <form onSubmit={submitAnswer}>
-            <p>{card.question}</p>
             <input
               value={answer}
               onChange={(e) => setCurrentAnswer(e.target.value)}
               type="text"
             />
           </form>
+          <img src={card.img} alt="" className="modal__img" />
+          <div className="question">{card.question}</div>
         </div>
       </div>
     </>

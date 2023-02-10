@@ -33,7 +33,7 @@ module.exports = {
         question:
           'Есть ли такое аниме? «Между жизнью и смертью я выбираю гамбургер»',
         answer: 'Нет',
-        img: '/home/roman/flash-card/backend/img/rtayd8.jpg',
+        img: '/img/zagluska.jpg',
         description: 'Такого аниме не существует! ',
         point: 300,
         user_id: 1,
@@ -186,7 +186,7 @@ module.exports = {
       {
         question: 'Какой самы популярный напиток в мире?',
         answer: 'Кофе',
-        img: '/home/roman/flash-card/backend/img/rtayd8.jpg',
+        img: '/img/zagluska.jpg',
         description: 'Ежегодно люди употребляют около 400 млрд. чашек',
         point: 100,
         user_id: 1,
@@ -208,7 +208,7 @@ module.exports = {
       {
         question: 'Какому знаку зодиака запрещено водить машину в Индонезии?',
         answer: 'Всем разрешено',
-        img: '/home/roman/flash-card/backend/img/rtayd8.jpg',
+        img: '/img/zagluska.jpg',
         description:
           'Знаки зодиака, к счастью, не являются критериями чего-либо серьезного',
         point: 300,
@@ -220,7 +220,7 @@ module.exports = {
       {
         question: 'Какую книгу чаще всего воруют в американских магазинах?',
         answer: 'Библию',
-        img: '/home/roman/flash-card/backend/img/rtayd8.jpg',
+        img: '/img/zagluska.jpg',
         description: 'HOLY JESUS',
         point: 400,
         user_id: 1,
@@ -231,7 +231,7 @@ module.exports = {
       {
         question: 'Умирают ли люди от непонятного почерка врачей?',
         answer: 'Да',
-        img: '/home/roman/flash-card/backend/img/rtayd8.jpg',
+        img: '/img/zagluska.jpg',
         description:
           'По американской статистике ежегодно от этого умирают более 7000 пациентов, в связи с тем, что им попросту выдают не те лекарства или вовсе неверно расшифровывают непонятные врачебные аббревиатуры',
         point: 500,
