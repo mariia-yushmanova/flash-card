@@ -3,14 +3,14 @@ import { useDispatch } from 'react-redux';
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import * as api from './api';
+
 import Navbar from '../features/Navbar/Navbar';
 import CardsList from '../features/Cards/CardsList';
-
 import MainPage from '../features/MainPage/MainPage';
-
-import Registration from '../features/Auth/Registration';
-import Authorization from '../features/Auth/Authorization';
-import Logout from '../features/Auth/Logout';
+import Registration from '../features/auth/Registration';
+import Authorization from '../features/auth/Authorization';
+import Logout from '../features/auth/Logout';
+import NotFound from '../features/NotFound/NotFound';
 
 function App(): JSX.Element {
   const dispatch = useDispatch();
@@ -22,12 +22,13 @@ function App(): JSX.Element {
     api
       .loadThemes()
       .then((data) => dispatch({ type: 'INIT_THEMES', payload: data }));
+    api
+      .getUsers()
+      .then((data) => dispatch({ type: 'INIT_USERS', payload: data }));
   }, [dispatch]);
 
   useEffect(() => {
-    api
-      .checkUser()
-      .then((data) => dispatch({ type: 'RES', payload: data }));
+    api.checkUser().then((data) => dispatch({ type: 'RES', payload: data }));
   }, []);
 
   return (
@@ -39,6 +40,7 @@ function App(): JSX.Element {
           <Route path="/login" element={<Authorization />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/cards" element={<CardsList />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </div>

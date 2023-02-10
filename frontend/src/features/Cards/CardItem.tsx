@@ -6,6 +6,7 @@ import './Card.scss';
 
 function CardItem({ card }: { card: Card }): JSX.Element {
   const [open, setOpen] = useState(false);
+  const [success, setSuccess] = useState(true);
   const [answer, setCurrentAnswer] = useState('');
 
   const dispatch = useDispatch();
@@ -22,7 +23,10 @@ function CardItem({ card }: { card: Card }): JSX.Element {
 
   return (
     <>
-      <div onClick={() => setOpen(true)} className="card_item">
+      <div
+        onClick={() => setOpen(true)}
+        className={`card_item ${success ? 'visible' : 'hidden'}`}
+      >
         <div className="question_point">{card.point}</div>
       </div>
       <div className={`overlay animated ${open ? 'show' : ''}`}>
@@ -44,7 +48,13 @@ function CardItem({ card }: { card: Card }): JSX.Element {
               onChange={(e) => setCurrentAnswer(e.target.value)}
               type="text"
             />
-            <button onClick={() => setOpen(false)} type="submit">
+            <button
+              onClick={() => {
+                setSuccess(false);
+                setOpen(false);
+              }}
+              type="submit"
+            >
               Answer
             </button>
           </form>

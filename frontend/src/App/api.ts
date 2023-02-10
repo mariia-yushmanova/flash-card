@@ -1,5 +1,5 @@
-import { Res, User } from '../features/Auth/Types/types';
-import { Answer, Card, Score } from '../features/Cards/types/types';
+import { User } from '../features/Auth/Types/types';
+import { Answer, Card } from '../features/Cards/types/types';
 
 import { Theme } from '../features/Themes/types/types';
 
@@ -41,10 +41,10 @@ export const logout = async (): Promise<User> => {
   return res.json();
 };
 
-// export const getUsers = async (): Promise<User[]> => {
-//   const res = await fetch('http://localhost:4000/api/');
-//   return res.json();
-// };
+export const getUsers = async (): Promise<User[]> => {
+  const res = await fetch('http://localhost:4000/api/main');
+  return res.json();
+};
 
 export const loadCards = async (): Promise<Card[]> => {
   const res = await fetch('http://localhost:4000/api/cards');
@@ -56,7 +56,7 @@ export const loadThemes = async (): Promise<Theme[]> => {
   return res.json();
 };
 
-export const checkAnswer = async (answer: Answer): Promise<Score> => {
+export const checkAnswer = async (answer: Answer): Promise<User> => {
   const res = await fetch('http://localhost:4000/api/cards/score', {
     method: 'PUT',
     headers: {

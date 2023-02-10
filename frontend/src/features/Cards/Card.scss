@@ -1,6 +1,7 @@
 /*Modal*/
 .card_item {
   margin: 10px;
+  width: 220px;
 }
 .overlay {
   position: fixed;
@@ -70,6 +71,10 @@
 
 .card-list {
   height: 100vh;
+  background-image: url('../../../public/img/jj.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden; 
 }
 
 .question {
@@ -80,9 +85,16 @@
   // margin: 10px;
   background: linear-gradient(
     179.96deg,
-    rgba(255, 255, 255, 0.25) 0.04%,
-    rgba(87, 177, 255, 0) 130.08%
+    rgba(255, 255, 255, 0.8) 70.04%,
+    rgba(87, 177, 255, 0.8) 130.08%
   );
   border-radius: 46px;
-  height: 130px;
+  vertical-align: middle;
+  line-height: 130px;
+}
+
+.hidden {
+  pointer-events: none; /* делаем элемент неактивным для взаимодействия */
+  cursor: default; /*  курсор в виде стрелки */
+  color: #888;
 }

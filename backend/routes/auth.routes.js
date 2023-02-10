@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const { User } = require('../db/models');
 
 router.get('/sign-in', async (req, res) => {
-  const id = req.session.userId;
+  const id = req.session.userid;
   if (id) {
     const user = await User.findOne({ where: { id } });
     res.json({ message: 'Hi', user: user.login });
@@ -22,6 +22,7 @@ router.post('/sign-in', async (req, res) => {
           id: user.id,
           name: user.name,
           email: user.email,
+          score: user.score,
         };
         req.session.userId = user.id;
         res.status(201).json({ message: '', user });
