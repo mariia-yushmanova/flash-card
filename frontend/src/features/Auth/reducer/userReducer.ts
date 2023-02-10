@@ -1,5 +1,5 @@
-import Action from './Types/Action';
-import { State } from './Types/types';
+import Action from '../Types/Action';
+import { State } from '../Types/types';
 
 const init = {
   user: {},
@@ -22,6 +22,18 @@ export const userReducer = (state: State = init, action: Action): State => {
         user: action.payload.user,
         message: action.payload.message,
       };
+      case 'LOG_USER':
+      return {
+        ...state,
+        user: action.payload.user,
+        message: action.payload.message,
+      };
+      case 'LOGOUT':
+      return {
+        ...state,
+        user: ''
+      };
+
     default:
       return state;
   }

@@ -6,6 +6,7 @@ import { RootState } from '../../store';
 
 function Navbar(): JSX.Element {
   const { user } = useSelector((store: RootState) => store.userState);
+
   return (
     <>
       <div className="nav__container">
@@ -15,7 +16,7 @@ function Navbar(): JSX.Element {
           </NavLink>
         </div>
         <ul className="nav__list">
-          {!user && (
+          {user && (
             <>
               <li>
                 <NavLink className="nav__list-item" to="/registration">

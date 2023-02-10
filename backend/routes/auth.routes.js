@@ -2,6 +2,16 @@ const router = require('express').Router();
 const bcrypt = require('bcrypt');
 const { User } = require('../db/models');
 
+router.get('/sign-in', async (req, res) => {
+  const id = req.session.userId;
+  if (id) {
+    const user = await User.findOne({ where: { id } });
+    res.json({ message: 'Hi', user: user.login });
+  } else {
+    res.json({ message: 'no', user: '' });
+  }
+});
+
 router.post('/sign-in', async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -58,6 +68,10 @@ router.post('/sign-up', async (req, res) => {
   } catch ({ message }) {
     res.json(message);
   }
+});
+
+router.get('/logout', (req, res) => {
+  req.session.destroy(() => res.clearCookie('user_sid').json({ message: 'Session destroy' }));
 });
 
 module.exports = router;

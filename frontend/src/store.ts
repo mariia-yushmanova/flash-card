@@ -1,5 +1,5 @@
 import { createStore, combineReducers } from 'redux';
-import { userReducer } from './features/Auth/userReducer';
+import { userReducer } from './features/Auth/reducer/userReducer';
 import { cardReducer } from './features/Cards/cardReducer';
 import { themeReducer } from './features/Themes/themeReducer';
 

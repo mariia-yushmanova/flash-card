@@ -1,9 +1,9 @@
 export type User = {
   id?: number;
-  name: string;
+  name?: string;
   email: string;
   password: string;
-  score?:number;
+  score?: number;
 };
 export type State = {
   user: {} | User;
