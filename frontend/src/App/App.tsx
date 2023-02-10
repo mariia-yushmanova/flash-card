@@ -10,6 +10,7 @@ import Registration from '../features/Auth/Registration';
 import Authorization from '../features/Auth/Authorization';
 import Logout from '../features/Auth/Logout';
 
+
 function App(): JSX.Element {
   const dispatch = useDispatch();
 
@@ -30,7 +31,7 @@ function App(): JSX.Element {
     <div className="App">
       <Routes>
         <Route path="/" element={<Navbar />}>
-          {/* <Route index element={<MainPage />} /> */}
+          <Route index element={<MainPage />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/login" element={<Authorization />} />
           <Route path="/logout" element={<Logout />} />

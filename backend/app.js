@@ -27,10 +27,12 @@ app.use(cors(corsOptions));
 const apiCardsRoute = require('./routes/cards.routes');
 const apiThemesRoute = require('./routes/themes.routes');
 const apiAuthRoute = require('./routes/auth.routes');
+const mainRout = require('./routes/main.routes');
 
 app.use('/api/cards', apiCardsRoute);
 app.use('/api/themes', apiThemesRoute);
 app.use('/api/auth', apiAuthRoute);
+app.use('/api/main', mainRout);
 
 app.listen(PORT, () => {
   console.log(`Сервер запущу на ${PORT}щу`);

@@ -36,6 +36,11 @@ export const logout = async (): Promise<User> => {
   return res.json();
 };
 
+// export const getUsers = async (): Promise<User[]> => {
+//   const res = await fetch('http://localhost:4000/api/');
+//   return res.json();
+// };
+
 export const loadCards = async (): Promise<Card[]> => {
   const res = await fetch('http://localhost:4000/api/cards');
   return res.json();
