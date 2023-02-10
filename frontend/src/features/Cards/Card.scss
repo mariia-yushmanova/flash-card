@@ -92,3 +92,9 @@
   vertical-align: middle;
   line-height: 130px;
 }
+
+.hidden {
+  pointer-events: none; /* делаем элемент неактивным для взаимодействия */
+  cursor: default; /*  курсор в виде стрелки */
+  color: #888;
+}

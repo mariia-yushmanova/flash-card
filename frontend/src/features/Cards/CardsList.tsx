@@ -13,7 +13,7 @@ function CardsList(): JSX.Element {
   return (
     <div className="card-list">
       {'id' in user && (
-        <div>
+        <div className="user_score">
           <i>{user.name}</i>
           <p>{user.score}</p>
         </div>

@@ -22,6 +22,9 @@ function App(): JSX.Element {
     api
       .loadThemes()
       .then((data) => dispatch({ type: 'INIT_THEMES', payload: data }));
+    api
+      .getUsers()
+      .then((data) => dispatch({ type: 'INIT_USERS', payload: data }));
   }, [dispatch]);
 
   useEffect(() => {

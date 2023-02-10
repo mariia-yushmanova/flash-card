@@ -5,10 +5,8 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../store';
 
 function MainPage(): JSX.Element {
-  const { user } = useSelector((store: RootState) => store.userState);
-
+  const { users, user } = useSelector((store: RootState) => store.userState);
   const nav = useNavigate();
-
   return (
     <div className="container main">
       <div className="main__flex">
@@ -23,9 +21,18 @@ function MainPage(): JSX.Element {
             </button>
           )}
         </div>
-        {/* <div>
+        <div>
           <h1>Супер стастика</h1>
-        </div> */}
+        </div>
+        <div>
+          {users.map((usere) => (
+            <div>
+              <p>
+                {usere.name},{usere.score}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
