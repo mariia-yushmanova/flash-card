@@ -11,7 +11,7 @@ function CardsList(): JSX.Element {
   const { user } = useSelector((store: RootState) => store.userState);
 
   return (
-    <div className="card-list container">
+    <div className="card-list">
       {'id' in user && (
         <div className="user_score">
           <i>{user.name}</i>

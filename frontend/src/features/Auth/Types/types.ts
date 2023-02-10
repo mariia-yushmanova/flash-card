@@ -1,3 +1,5 @@
+export type Res = { message: string; user: string };
+
 export type User = {
   id?: number;
   name?: string;
@@ -8,4 +10,5 @@ export type User = {
 export type State = {
   user: {} | User;
   message: '' | string;
+  users: User[];
 };

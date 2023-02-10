@@ -1,4 +1,4 @@
-import { State, User } from '../features/Auth/Types/types';
+import { State, Res, User } from '../features/Auth/Types/types';
 import { Answer, Card } from '../features/Cards/types/types';
 
 import { Theme } from '../features/Themes/types/types';
@@ -27,7 +27,7 @@ export const login = async (item: User): Promise<User> => {
   });
   return res.json();
 };
-export const checkUser = async (): Promise<User> => {
+export const checkUser = async (): Promise<Res> => {
   const res = await fetch('http://localhost:4000/api/auth/sign-in', {
     credentials: 'include',
   });
@@ -41,10 +41,10 @@ export const logout = async (): Promise<User> => {
   return res.json();
 };
 
-// export const getUsers = async (): Promise<User[]> => {
-//   const res = await fetch('http://localhost:4000/api/');
-//   return res.json();
-// };
+export const getUsers = async (): Promise<User[]> => {
+  const res = await fetch('http://localhost:4000/api/main');
+  return res.json();
+};
 
 export const loadCards = async (): Promise<Card[]> => {
   const res = await fetch('http://localhost:4000/api/cards');
