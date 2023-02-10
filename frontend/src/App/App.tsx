@@ -27,7 +27,7 @@ function App(): JSX.Element {
   useEffect(() => {
     api
       .checkUser()
-      .then((data) => dispatch({ type: 'LOG_USER', payload: data }));
+      .then((data) => dispatch({ type: 'RES', payload: data }));
   }, []);
 
   return (
