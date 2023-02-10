@@ -32,10 +32,18 @@ module.exports = (sequelize, DataTypes) => {
       theme_id: {
         allowNull: false,
         type: DataTypes.INTEGER,
+        references: {
+          model: 'Themes',
+          key: 'id',
+        },
       },
       user_id: {
         allowNull: false,
         type: DataTypes.INTEGER,
+        references: {
+          model: 'Users',
+          key: 'id',
+        },
       },
     },
     {
