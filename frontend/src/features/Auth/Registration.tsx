@@ -37,7 +37,7 @@ function Registration(): JSX.Element {
         style={{ display: 'flex', flexDirection: 'column' }}
         onSubmit={registr}
       >
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">Имя</label>
         <input
           id="name"
           name="name"
@@ -45,7 +45,7 @@ function Registration(): JSX.Element {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email">Почта</label>
         <input
           id="email"
           name="email"
@@ -53,7 +53,7 @@ function Registration(): JSX.Element {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">Пароль</label>
         <input
           id="password"
           name="password"
@@ -61,7 +61,7 @@ function Registration(): JSX.Element {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <label htmlFor="password2">Password 2</label>
+        <label htmlFor="password2">Подтвердите пароль</label>
         <input
           id="password2"
           name="password2"
@@ -70,7 +70,9 @@ function Registration(): JSX.Element {
           onChange={(e) => setPassword2(e.target.value)}
         />
         <p id="error" />
-        <button type="submit">Sign Up</button>
+        <button type="submit" className="button-color">
+          Регистрация
+        </button>
       </form>
     </div>
   );

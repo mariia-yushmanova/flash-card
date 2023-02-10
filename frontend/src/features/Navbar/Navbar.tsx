@@ -20,12 +20,12 @@ function Navbar(): JSX.Element {
             <>
               <li>
                 <NavLink className="nav__list-item" to="/registration">
-                  Registration
+                  Регистрация
                 </NavLink>
               </li>
               <li>
                 <NavLink className="nav__list-item" to="/login">
-                  Login
+                  Логин
                 </NavLink>
               </li>
             </>
