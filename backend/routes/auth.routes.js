@@ -24,7 +24,7 @@ router.post('/sign-in', async (req, res) => {
           email: user.email,
           score: user.score,
         };
-        req.session.userid = user.id;
+        req.session.userId = user.id;
         res.status(201).json({ message: '', user });
       } else {
         res
@@ -56,8 +56,7 @@ router.post('/sign-up', async (req, res) => {
           name: newUser.name,
           email: newUser.email,
         };
-        console.log(newUser);
-        req.session.userid = user.id;
+        req.session.userId = user.id;
         res.status(201).json({ message: '', user });
       } else {
         res
