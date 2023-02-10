@@ -1,4 +1,4 @@
-import { Card } from './types';
+import { Answer, Card } from './types';
 
 type Action =
   | {
@@ -7,7 +7,7 @@ type Action =
     }
   | {
       type: 'CHECK_ANSWER';
-      payload: Card;
+      payload: Answer;
     };
 
 export default Action;

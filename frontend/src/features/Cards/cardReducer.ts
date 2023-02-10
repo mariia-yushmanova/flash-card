@@ -1,7 +1,7 @@
 import Action from './types/Action';
 import { State } from './types/types';
 
-export const init = { cards: [] };
+export const init = { cards: [], answer: { id: 0, text: '' } };
 export const cardReducer = (state: State = init, action: Action): State => {
   switch (action.type) {
     case 'INIT_CARDS':
@@ -12,7 +12,7 @@ export const cardReducer = (state: State = init, action: Action): State => {
     case 'CHECK_ANSWER':
       return {
         ...state,
-        cards: [action.payload],
+        answer: { id: action.payload.id, text: action.payload.text },
       };
 
     default:

@@ -9,8 +9,18 @@ export type Card = {
   user_id: number;
 };
 
+export type Score = {
+  points: number;
+};
+
+export type Answer = {
+  id: number;
+  text: string;
+};
+
 export type State = {
   cards: Card[];
+  answer: Answer;
 };
 
 export type CardID = Card['id'];
